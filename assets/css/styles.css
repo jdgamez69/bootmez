@@ -423,12 +423,12 @@ body.menu-open .menu-toggle span:nth-child(3) {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 }
 
 .mini-grid article {
-  min-height: 150px;
+  min-height: 132px;
   padding: 16px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.13);
@@ -585,6 +585,42 @@ body.menu-open .menu-toggle span:nth-child(3) {
   border-radius: 50%;
   background: var(--accent);
   box-shadow: 0 0 0 5px rgba(0, 163, 207, 0.12);
+}
+
+
+
+.ai-section {
+  background:
+    radial-gradient(circle at 12% 15%, rgba(0, 163, 207, 0.14), transparent 30%),
+    linear-gradient(180deg, var(--white), var(--bg-soft));
+}
+
+.ai-card-main {
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-card-main::after {
+  content: "IA";
+  position: absolute;
+  right: 24px;
+  bottom: -24px;
+  color: rgba(0, 163, 207, 0.1);
+  font-size: clamp(5rem, 14vw, 10rem);
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: -0.08em;
+}
+
+.ai-tags {
+  position: relative;
+  z-index: 1;
+  margin-top: 24px;
+}
+
+.ai-tags span {
+  background: rgba(0, 163, 207, 0.12);
+  color: var(--primary);
 }
 
 .blue-section {
