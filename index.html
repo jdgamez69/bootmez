@@ -370,39 +370,42 @@
           </div>
         </div>
 
-        <form class="contact-form reveal" data-contact-form data-email="jdgamez69@gmail.com">
+        <form class="contact-form reveal" action="https://formspree.io/f/xvoerlpl" method="POST">
+          <input type="hidden" name="_subject" value="Nueva solicitud desde Bootmez Tecnology" />
+          <input type="text" name="_gotcha" class="hidden-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
           <div class="form-row">
-            <label for="nombre">Nombre y empresa</label>
-            <input id="nombre" name="nombre" type="text" placeholder="Ej. Laura Pérez - Empresa ABC" required />
+            <label for="name">Nombre y empresa</label>
+            <input id="name" name="name" type="text" placeholder="Ej. Laura Pérez - Empresa ABC" autocomplete="name" required />
           </div>
           <div class="form-row two-columns">
             <div>
-              <label for="correo">Correo</label>
-              <input id="correo" name="correo" type="email" placeholder="correo@empresa.com" required />
+              <label for="email">Correo</label>
+              <input id="email" name="email" type="email" placeholder="correo@empresa.com" autocomplete="email" required />
             </div>
             <div>
-              <label for="telefono">Teléfono</label>
-              <input id="telefono" name="telefono" type="tel" placeholder="+57 300 000 0000" />
+              <label for="phone">Teléfono</label>
+              <input id="phone" name="phone" type="tel" placeholder="+57 300 000 0000" autocomplete="tel" inputmode="tel" />
             </div>
           </div>
           <div class="form-row">
-            <label for="servicio">Servicio de interés</label>
-            <select id="servicio" name="servicio" required>
+            <label for="service">Servicio de interés</label>
+            <select id="service" name="service" required>
               <option value="">Selecciona una opción</option>
-              <option>Mantenimiento de equipos</option>
-              <option>Instalación de servidores</option>
-              <option>Seguridad de la información</option>
-              <option>Redes y conectividad</option>
-              <option>Backups y continuidad</option>
-              <option>Telefonía IP / Asterisk</option>
+              <option value="Mantenimiento de equipos">Mantenimiento de equipos</option>
+              <option value="Instalación de servidores">Instalación de servidores</option>
+              <option value="Seguridad de la información">Seguridad de la información</option>
+              <option value="Redes y conectividad">Redes y conectividad</option>
+              <option value="Backups y continuidad">Backups y continuidad</option>
+              <option value="Telefonía IP / Asterisk">Telefonía IP / Asterisk</option>
             </select>
           </div>
           <div class="form-row">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos el problema, cantidad de equipos, sede o servicio que necesitas." required></textarea>
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntanos el problema, cantidad de equipos, sede o servicio que necesitas." required></textarea>
           </div>
           <button class="btn btn-primary" type="submit">Enviar solicitud</button>
-          <p class="form-note" data-form-note>El formulario abrirá tu correo con el mensaje listo para enviar.</p>
+          <p class="form-note">El mensaje será enviado directamente al correo configurado en Formspree.</p>
         </form>
       </div>
     </section>
