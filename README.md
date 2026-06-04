@@ -1,6 +1,6 @@
-# Bootmez Tecnology - Sitio web corporativo
+# Bootmez Tecnologia - Sitio web corporativo
 
-Sitio web estático para Bootmez Tecnology, enfocado en soporte tecnológico preventivo para empresas en San José de Cúcuta y área metropolitana.
+Sitio web estático para Bootmez Tecnologia, enfocado en soporte tecnológico preventivo para empresas en San José de Cúcuta y área metropolitana.
 
 ## Cambios de esta versión
 
