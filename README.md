@@ -1,50 +1,56 @@
 # Bootmez Tecnology - Sitio web corporativo
 
-Sitio web estático creado desde cero para Bootmez Tecnology. Está orientado a servicios de mantenimiento de equipos, instalación de servidores, virtualización, redes, backups, telefonía IP, seguridad de la información, agentes con IA, automatización, páginas web y asesoría para proyectos de desarrollo.
+Sitio web estático para Bootmez Tecnology, enfocado en soporte tecnológico preventivo para empresas en San José de Cúcuta y área metropolitana.
 
-## Estructura
+## Cambios de esta versión
 
-```text
-.
-├── index.html
-├── netlify.toml
-├── README.md
-└── assets
-    ├── css/styles.css
-    ├── img/bootmez-logo.png
-    ├── img/favicon.png
-    ├── img/og-bootmez.png
-    └── js/main.js
-```
+- Inicio más corto y comercial.
+- Mensaje principal enfocado en Cúcuta.
+- Servicios reorganizados en 4 líneas principales:
+  - Mantenimiento y soporte TI.
+  - Servidores, redes y respaldos.
+  - Seguridad de la información.
+  - IA, automatización y desarrollo web.
+- Nueva sección de problemas que resuelve Bootmez.
+- Nueva sección de modalidades de servicio:
+  - Visita técnica.
+  - Mantenimiento preventivo.
+  - Soporte mensual.
+  - Proyecto puntual.
+- Sección de IA más clara y menos invasiva.
+- Formulario conectado a Formspree.
 
-## Cómo publicarlo en Netlify
+## Archivos principales
 
-1. Entra a Netlify y crea un nuevo sitio.
-2. Sube esta carpeta completa con la opción de despliegue manual o conéctala a un repositorio.
-3. No necesitas comando de build. La carpeta de publicación es la raíz del proyecto (`.`).
+- `index.html`: estructura del sitio.
+- `assets/css/styles.css`: estilos responsive.
+- `assets/js/main.js`: menú móvil, año automático y animaciones.
+- `assets/img/`: logo, favicon y vista previa.
+- `netlify.toml`: configuración básica para Netlify.
 
 ## Formulario de contacto
 
-El formulario ya está conectado a Formspree con este endpoint:
+El formulario usa el endpoint:
 
 ```html
 action="https://formspree.io/f/xvoerlpl" method="POST"
 ```
 
-Cuando un visitante envíe el formulario, el mensaje llegará al correo configurado en Formspree. El campo "Servicio de interés" incluye mantenimiento, servidores, seguridad, redes, backups, telefonía IP, agentes con IA, páginas web y asesoría para proyectos de desarrollo.
+Los mensajes llegan al correo configurado en Formspree.
 
-## Datos que conviene personalizar
+## Publicación en Netlify
 
-En `index.html` puedes cambiar:
+1. Entra a Netlify.
+2. Sube la carpeta completa del proyecto o conecta el repositorio.
+3. No requiere build command.
+4. El directorio de publicación es la raíz del proyecto.
 
-- Correo de contacto: busca `jdgamez69@gmail.com`.
-- Dominio final: busca `https://bootmez.com` dentro del bloque JSON-LD.
-- Textos de servicios, ubicación, casos de experiencia y preguntas frecuentes.
-- Agrega teléfono o WhatsApp si quieres un botón directo.
+## Personalización pendiente
 
-## Colores principales
+Cuando tengas datos corporativos definitivos, reemplaza:
 
-- Azul principal: `#061b33`
-- Azul secundario: `#082a4a`
-- Cian/acento: `#00a3cf`
-- Fondo claro: `#f5f8fb`
+- Correo.
+- Teléfono o WhatsApp.
+- Dominio final.
+- Casos de éxito reales.
+- Horarios de atención.
